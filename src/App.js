@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Contact from './Contact/Contact';
+import { Cats } from './cats';
+import Header from './Header/Header';
 
 function App() {
+  const cats = Cats.map((cat, i) => {
+    return( <Contact 
+     key={i}
+     item =  {cat}
+     /> )
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <section className="cat-container">
+        {cats}
+      </section>
     </div>
   );
 }
 
 export default App;
+// name= {cat.name}
+//      image={cat.image}
+//      breed ={cat.breed}
+//      color = {cat.color} 
+//      sold = {cat.sold}
