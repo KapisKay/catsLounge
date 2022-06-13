@@ -6,27 +6,31 @@ export const Cats = [
       name: "Africa",
       breed:  "Siberian",
       color: "black",
-      sold: true
+      sold: true,
+      isRated: true
     },
     {
       image: cat1,
       name: "Ashley",
       breed:  "Siberian",
       color: "grey",
-      sold: false
+      sold: false,
+      isRated: false
     },
     {
       image: cat1,
       name: "Leo",
       breed:  "European shorthair",
       // color: "brown",
-      sold: false
+      sold: false,
+      isRated: true
     },
     {
       image: cat2,
       name: "Blackie",
       breed:  "European shorthair",
       color: "black",
-      sold: true
+      sold: true,
+      isRated: true
     },
 ]

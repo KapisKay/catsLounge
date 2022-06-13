@@ -1,11 +1,11 @@
 import './App.css';
-import Contact from './Contact/Contact';
+import Cat from './Cat/Cat';
 import { Cats } from './cats';
 import Header from './Header/Header';
 
 function App() {
   const cats = Cats.map((cat, i) => {
-    return( <Contact 
+    return( <Cat 
      key={i}
      item =  {cat}
      /> )
